@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Buddy - Startseite</title>
+
+  <link href="bildschirm.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <style>
+    /* ===== Logo Bereich ganz oben ===== */
+    .logo-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px 20px;
+        background: linear-gradient(135deg, #e0f7fa, #ffffff);
+        overflow: hidden;
+    }
+
+    .logo-top img {
+        width: 180px;
+        max-width: 70%;
+        animation: floatLogo 4s ease-in-out infinite;
+        transition: transform 0.4s ease;
+    }
+
+    .logo-top img:hover {
+        transform: scale(1.08);
+    }
+
+    @keyframes floatLogo {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-12px); }
+        100% { transform: translateY(0); }
+    }
+
+    /* ===== Hero-Bereich ===== */
+    .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #ffffff, #f0f9ff);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #075985;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #0f172a;
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+    }
+
+    .cta {
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 8px;
+        background-color: #0ea5e9;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+        background-color: #0369a1;
+        transform: translateY(-2px);
+    }
+
+    /* ===== Hauptinhalt ===== */
+    main {
+        padding: 60px 20px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* ===== Video ===== */
+    .main-video {
+        margin: 60px auto;
+    }
+
+    .video-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        animation: fadeUp 1.2s ease;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* ===== Button ===== */
+    .button-link a {
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 8px;
+        background-color: #0ea5e9;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .button-link a:hover {
+        background-color: #0369a1;
+        transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #f1f5f9;
+        margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Logo GANZ OBEN -->
+  <!-- Fullscreen Logo Banner -->
+<section class="logo-banner">
+  <img src="logo.png" alt="Study Buddy Logo">
+</section>
+
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+       <li id = "navi01"> <a href="index.html"title = "Zu unserer Startseite"class="active">Startseite</a></li>
+        <li id = "navi02"> <a href="Lernplaetze.html" title = "Zu unseren Angeboten" >Lernpl&aumltze und -partner finden</a></li>
+        <li id = "navi03"> <a href="lernstoffe.html"title = "Bestellen Sie vor">Lernstoff und Nachhilfeangebote</a></li>
+        <li id = "navi04"> <a href="kontakt.html"title = "Zu unserem Kontaktformular">Kontakt</a></li>
+		<li id = "navi05"><a href="agb.html"title = "Zu unseren AGB">AGB</a></li>
+		<li id = "navi06"><a href="impressum.html"title = "Unsere Kontaktdaten">Impressum</a></li>
+		<li id = "navi07"><a href="register.html"title = "Registrieren Sie sich!">Registrierung</a></li>
+		<li id = "navi08"><a href="calender.html"title = "Buchen Sie einen Termin mit uns!">Calendly</a></li>
+		<li id = "navi09"><a href="login.html" title="Logge dich ein">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Study Buddy</h1>
+    <p>Finde Lernpartner, Lernplätze, Lernstoffe und Nachhilfeangebote auf einen Blick!</p>
+    <a class="cta" href="Lernplaetze.html">Jetzt entdecken</a>
+  </section>
+
+  <!-- Hauptinhalt -->
+  <main>
+    <div class="container">
+      <h1>Willkommen bei Study Buddy!</h1>
+	      <p> &nbsp; </p>
+      <p> 
+        Entdecke unsere Angebote, finde deinen Lernplatz, Lernpartner
+        oder lade deinen gewünschten Lernstoff herunter.
+      </p>
+
+      <section class="main-video">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/-mJQ5BooYwY"
+            title="Study Buddy Vorstellungsvideo"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <div class="button-link">
+        <a href="login.html">Let’s go!</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Study Buddy</p>
+    <a href="impressum.html">Impressum</a> | <a href="agb.html">AGB</a>
+  </footer>
+
+</body>
+</html>
