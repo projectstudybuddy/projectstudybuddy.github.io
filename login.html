@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy – Login</title>
+ <link href= "bildschirm.css" rel= "stylesheet" type = "text/css" media ="screen" />
+   
+
+
+</head>
+
+<body>
+   <style>
+        body {
+            font-family: Inter, Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            margin: 0;
+            padding: 0;
+            color: #0f172a;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        p {
+            text-align: center;
+            color: #475569;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 10px;
+            border: 1px solid #cbd5f5;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 30px;
+            padding: 14px;
+            border: none;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #2563eb, #6366f1);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* OPTION CARDS */
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .option-card {
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 16px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+		
+	
+}
+
+		
+		
+    </style>
+
+  <header>
+    <nav>
+    <h1>Study Buddy</h1>
+      <ul>
+        <li id = "navi01"> <a href="index.html"title = "Zu unserer Startseite">Startseite</a></li>
+        <li id = "navi02"> <a href="Lernplaetze.html" title = "Zu unseren Angeboten" >Lernpl&aumltze und -partner finden</a></li>
+        <li id = "navi03"> <a href="lernstoffe.html"title = "Bestellen Sie vor">Lernstoff und Nachhilfeangebote</a></li>
+        <li id = "navi04"> <a href="kontakt.html"title = "Zu unserem Kontaktformular">Kontakt</a></li>
+		<li id = "navi05"><a href="agb.html"title = "Zu unseren AGB">AGB</a></li>
+		<li id = "navi06"><a href="impressum.html"title = "Unsere Kontaktdaten">Impressum</a></li>
+		<li id = "navi07"><a href="register.html"title = "Registrieren Sie sich!">Registrierung</a></li>
+		<li id = "navi08"><a href="calender.html"title = "Buchen Sie einen Termin mit uns!">Calendly</a></li>
+		<li id = "navi09"><a href="login.html" title="Logge dich ein"class="active">Login</a></li>
+       </ul>
+    </nav>
+  </header>
+  
+  
+  
+  
+  <div class="container">
+  
+    <!-- ================= REGISTRIERUNG ================= -->
+    <section id="registerSection">
+        <h1>Study Buddy Login</h1>
+		    <p> &nbsp; </p>
+        <p>Logge dich ein und finde Lernpartner, Lernplätze, Lernmaterialien oder Nachhilfeangebote.</p>
+
+     
+
+        <label>E-Mail</label>
+        <input type="email" required>
+
+        <label>Passwort</label>
+        <input type="password" required>
+		
+        <button>Bestätigen</button>
+		
+
+     <p> &nbsp; </p>
+	
+		
+	<div class="button-link">
+        <a href="register.html">Registrier dich!</a>
+	
+     </div>
+		
+		
+		
+    </section>
+
+    
+
+    <footer>
+        © 2026 Study Buddy 
+    </footer>
+</div>
+
+</script>
+
+</body>
+</html>

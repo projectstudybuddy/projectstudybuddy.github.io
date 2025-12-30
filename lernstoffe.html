@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Study Buddy - Lernstoffe</title>
+   <link href= "bildschirm.css" rel= "stylesheet" type = "text/css" media ="screen" />
+ 
+</head>
+<body>
+
+
+  <header>
+    <nav>
+      <h1>   Study Buddy </h1>
+      <ul>
+        <li id = "navi01"> <a href="index.html"title = "Zu unserer Startseite">Startseite</a></li>
+        <li id = "navi02"> <a href="Lernplaetze.html" title = "Zu unseren Angeboten" >Lernpl&aumltze und -partner finden</a></li>
+        <li id = "navi03"> <a href="lernstoffe.html"title = "Bestellen Sie vor"class="active">Lernstoff und Nachhilfeangebote</a></li>
+        <li id = "navi04"> <a href="kontakt.html"title = "Zu unserem Kontaktformular">Kontakt</a></li>
+		<li id = "navi05"><a href="agb.html"title = "Zu unseren AGB">AGB</a></li>
+		<li id = "navi06"><a href="impressum.html"title = "Unsere Kontaktdaten">Impressum</a></li>
+		<li id = "navi07"><a href="register.html"title = "Registrieren Sie sich!">Registrierung</a></li>
+		<li id = "navi08"><a href="calender.html"title = "Buchen Sie einen Termin mit uns!">Calendly</a></li>
+		 <li id="navi09"><a href="login.html" title="Logge dich ein">Login</a></li>
+
+		
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <main class="Lernstoffe">
+    
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Study Buddy – Lernstoff & Nachhilfe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 26px;
+    box-shadow: 0 35px 70px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #3730a3;
+}
+
+.section-title {
+    margin-top: 70px;
+    font-size: 1.7rem;
+    color: #4338ca;
+    border-bottom: 2px solid #e0e7ff;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #475569;
+    margin: 20px 0 40px;
+}
+
+label {
+    display: block;
+    margin-top: 22px;
+    font-weight: 600;
+}
+
+select, input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #c7d2fe;
+    background: #f8fafc;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    margin-top: 35px;
+    padding: 16px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6366f1, #a78bfa);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(99,102,241,0.25);
+}
+
+/* LOGIN MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    background: #ffffff;
+    max-width: 440px;
+    margin: 10% auto;
+    padding: 45px;
+    border-radius: 26px;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.2);
+}
+
+.modal h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3730a3;
+}
+
+.close {
+    text-align: right;
+    cursor: pointer;
+    font-weight: 600;
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    margin: 70px 0 30px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Lernstoffe herunterladen & Nachhilfe finden</h1>
+    <p>Für Downloads und Nachhilfeangebote ist ein Login erforderlich.</p>
+
+    <!-- =====================
+         LERNSTOFF
+         ===================== -->
+    <h2 class="section-title">Lernstoff herunterladen</h2>
+
+    <label>Studiengang</label>
+    <select>
+        <option>Informatik</option>
+        <option>BWL</option>
+        <option>Wirtschaftsinformatik</option>
+        <option>Medieninformatik</option>
+    </select>
+
+    <label>Modul</label>
+    <select>
+        <option>Mathematik 1</option>
+        <option>Programmierung</option>
+        <option>Datenbanken</option>
+    </select>
+
+    <label>Welchen Lernstoff suchst du?</label>
+    <input type="text" placeholder="z. B. Zusammenfassung, Altklausur">
+
+    <button onclick="checkLogin('material')">Lernstoff herunterladen</button>
+
+    <!-- =====================
+         NACHHILFE
+         ===================== -->
+    <h2 class="section-title">Nachhilfeangebote finden</h2>
+
+    <label>Fach</label>
+    <select>
+        <option>Mathematik</option>
+        <option>Programmierung</option>
+        <option>Statistik</option>
+        <option>Rechnungswesen</option>
+    </select>
+
+    <label>Art der Nachhilfe</label>
+    <select>
+        <option>Einzelunterricht</option>
+        <option>Gruppennachhilfe</option>
+        <option>Online-Nachhilfe</option>
+        <option>Präsenz</option>
+    </select>
+
+    <label>Ort (optional)</label>
+    <input type="text" placeholder="z. B. Saarbrücken oder Online">
+
+    <button onclick="checkLogin('tutor')">Nachhilfeangebote suchen</button>
+
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <div class="close" onclick="closeModal()">✕</div>
+        <h2>Login erforderlich</h2>
+
+        <label>E-Mail</label>
+        <input type="email" id="email" placeholder="name@hochschule.de">
+
+        <label>Passwort</label>
+        <input type="password" id="password" placeholder="••••••••">
+
+        <button onclick="login()">Einloggen</button>
+    </div>
+</div>
+
+<footer>
+© 2025 StudyBuddy – Lernpartner, Lernstoffe & Nachhilfe
+</footer>
+
+<script>
+let loggedIn = false;
+let actionType = "";
+
+function checkLogin(type) {
+    actionType = type;
+    if (!loggedIn) {
+        document.getElementById("loginModal").style.display = "block";
+    } else {
+        redirect();
+    }
+}
+
+function closeModal() {
+    document.getElementById("loginModal").style.display = "none";
+}
+
+function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email && password) {
+        loggedIn = true;
+        closeModal();
+        redirect();
+    } else {
+        alert("Bitte E-Mail und Passwort eingeben.");
+    }
+}
+
+function redirect() {
+    if (actionType === "material") {
+        window.open("https://www.studydrive.net/", "_blank");
+    }
+    if (actionType === "tutor") {
+        window.open("https://www.nachhilfeportal.de/", "_blank");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+  </main>
+
+  <footer>
+    <p> 2026 Study Buddy </p>
+    
+  </footer>
+</body>
+</html>

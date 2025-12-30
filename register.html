@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Buddy - Registrierung</title>
+  <link href="bildschirm.css" rel="stylesheet" type="text/css" media="screen" />
+
+  <style>
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+    }
+
+    header h1 {
+      text-align: center;
+      color: #1e3a8a;
+    }
+
+  
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 18px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #475569;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 10px;
+      border: 1px solid #cbd5f5;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 30px;
+      padding: 14px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #2563eb, #6366f1);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+    }
+
+    .checkbox-group {
+      margin-top: 18px;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .button-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-link a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <h1>Study Buddy</h1>
+      <ul>
+       <li id = "navi01"> <a href="index.html"title = "Zu unserer Startseite">Startseite</a></li>
+        <li id = "navi02"> <a href="Lernplaetze.html" title = "Zu unseren Angeboten" >Lernpl&aumltze und -partner finden</a></li>
+        <li id = "navi03"> <a href="lernstoffe.html"title = "Bestellen Sie vor">Lernstoff und Nachhilfeangebote</a></li>
+        <li id = "navi04"> <a href="kontakt.html"title = "Zu unserem Kontaktformular">Kontakt</a></li>
+		<li id = "navi05"><a href="agb.html"title = "Zu unseren AGB">AGB</a></li>
+		<li id = "navi06"><a href="impressum.html"title = "Unsere Kontaktdaten">Impressum</a></li>
+		<li id = "navi07"><a href="register.html"title = "Registrieren Sie sich!"class="active">Registrierung</a></li>
+		<li id = "navi08"><a href="calender.html"title = "Buchen Sie einen Termin mit uns!">Calendly</a></li>
+		<li id = "navi09"><a href="login.html" title="Logge dich ein">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt -->
+  <main>
+    <div class="container">
+      <h1>Registrierung</h1>
+
+      <form id="registerForm" action="#" method="post">
+        <label for="fname">Vorname</label>
+        <input type="text" id="fname" name="firstname" required>
+
+        <label for="lname">Nachname</label>
+        <input type="text" id="lname" name="lastname" required>
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Passwort</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <div class="checkbox-group">
+          <label class="checkbox-label" for="agreeAGB">
+            <input type="checkbox" id="agreeAGB">
+            Ich akzeptiere die&nbsp;<a href="agb.html" target="_blank"> AGB </a>
+          </label>
+          <label class="checkbox-label" for="agreeDSGVO">
+            <input type="checkbox" id="agreeDSGVO">
+            Ich habe die&nbsp;<a href="datenschutz.html" target="_blank"> Datenschutzbestimmungen </a>&nbsp;gelesen
+          </label>
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Registrieren</button>
+      </form>
+
+      <div class="button-link">
+        <a href="login.html">Logge dich ein</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="datenschutz">
+    <h3>🔒 Datenschutz (DSGVO)</h3>
+    <p>Die htwsaar Datenschutzrichtlinie beschreibt, wie htwsaar Ihre und wir unsere personenbezogenen Daten erfassen, verwenden und weitergeben. Zusätzlich zu dieser Datenschutzrichtlinie stellen wir Ihnen Hinweise und Datenschutzinformationen zur Verfügung, die in unsere Produkte und bestimmte Funktionen eingebettet sind und Zugriff auf Ihre personenbezogenen Daten erfordern. Diese produktspezifischen Informationen werden von unserem Datenschutzsymbol begleitet. Sie erhalten die Gelegenheit, diese produktspezifischen Informationen zu prüfen, bevor Sie diese Funktionen nutzen. Sie können diese Informationen auch jederzeit einsehen, entweder in den Einstellungen zu diesen Funktionen und/oder online unter https://www.htwsaar.de/datenschutz. Bitte nehmen Sie sich einen Moment Zeit, um sich mit unseren Datenschutzpraktiken vertraut zu machen, die Sie über die nachstehenden Links aufrufen können, und kontaktieren Sie uns, wenn Sie Fragen haben.</p>
+
+    <p>Alle Eingaben im Kontaktformular sind rein simulativ. Es findet keine Speicherung oder Übertragung statt.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Study Buddy</p>
+  </footer>
+
+  <script>
+    const agbCheckbox = document.getElementById('agreeAGB');
+    const dsgvoCheckbox = document.getElementById('agreeDSGVO');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function toggleSubmit() {
+      submitBtn.disabled = !(agbCheckbox.checked && dsgvoCheckbox.checked);
+    }
+
+    agbCheckbox.addEventListener('change', toggleSubmit);
+    dsgvoCheckbox.addEventListener('change', toggleSubmit);
+  </script>
+</body>
+</html>
